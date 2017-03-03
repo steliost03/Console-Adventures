@@ -1629,11 +1629,11 @@ while ((clock() - begin) < delay);
 
 ///
 
-short unit::gearupgrade_dialog(const string itemname,const string statname, short* statlevel, short* gearlevel,short increase_amount,short action){
+short unit::gearupgrade_dialog(const string itemname,const string statname, short statlevel, short gearlevel,short increase_amount,short action){
 	//action : 1-> purchase
 	//		   2-> upgrade
 
-	unsigned long cost = 98 * (*statlevel) + ( (*gearlevel) * 2);
+	unsigned long cost = 98 * statlevel + ( gearlevel * 2);
 
 	if (action == 1)
 		cout << "\n\nThe cost for upgrading your " << itemname << " is " << cost << " gold." << endl;
@@ -1653,8 +1653,6 @@ short unit::gearupgrade_dialog(const string itemname,const string statname, shor
 	if (proceed[0] == 'y') {
 
 		gold -= cost;
-		*statlevel++;
-		*gearlevel++;
 		cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYour " << statname << " has increased by " << increase_amount << endl;
 		cout << "Press Enter to continue" << endl;
 		cin.get();
@@ -1693,9 +1691,11 @@ void unit::gearupgrade() {
 
     else if(selection[0]=='1') {
 
-		if (gearupgrade_dialog("helmet","maximum hp", &helmetlevel, &gearlevel,50,1)){
+		if (gearupgrade_dialog("helmet","maximum hp", helmetlevel, gearlevel,50,1)){
 			maxhp += 50;
 			hp = maxhp;
+			helmetlevel++;
+			gearlevel++;
 			gearupgrade();
 			return;
 		}
@@ -1710,8 +1710,10 @@ void unit::gearupgrade() {
 //
     else if(selection[0]=='2') {
 
-		if (gearupgrade_dialog("armor", "pdef", &armorlevel, &gearlevel, 50,1)){
+		if (gearupgrade_dialog("armor", "pdef", armorlevel, gearlevel, 50,1)){
 			pdef += 50;
+			armorlevel++;
+			gearlevel++;
 			gearupgrade();
 			return;
 		}
@@ -1725,8 +1727,10 @@ void unit::gearupgrade() {
 //
    else if(selection[0]=='3') {
 
-	   if (gearupgrade_dialog("boots", "evasion", &bootslevel, &gearlevel, 1,1)){
+	   if (gearupgrade_dialog("boots", "evasion", bootslevel, gearlevel, 1,1)){
 		   evasion += 1;
+		   bootslevel++;
+		   gearlevel++;
 		   gearupgrade();
 		   return;
 	   }
@@ -1740,8 +1744,10 @@ void unit::gearupgrade() {
 //
    else if (selection[0] == '4') {
 
-	   if (gearupgrade_dialog("training manual", "accuracy", &trmlevel, &gearlevel, 1, 2)){
+	   if (gearupgrade_dialog("training manual", "accuracy", trmlevel, gearlevel, 1, 2)){
 		   accuracy += 1;
+		   trmlevel++;
+		   gearlevel++;
 		   gearupgrade();
 		   return;
 	   }
@@ -1756,8 +1762,10 @@ void unit::gearupgrade() {
 //
    else if(selection[0]=='5') {
 
-	   if (gearupgrade_dialog("jewels", "mresist", &jewelslevel, &gearlevel, 50, 1)){
+	   if (gearupgrade_dialog("jewels", "mresist", jewelslevel, gearlevel, 50, 1)){
 		   m_resist += 50;
+		   jewelslevel++;
+		   gearlevel++;
 		   gearupgrade();
 		   return;
 	   }
@@ -1772,8 +1780,10 @@ void unit::gearupgrade() {
 
    else if(selection[0]=='6') {
 
-	   if (gearupgrade_dialog("weapon", "attackpower", &weaponlevel, &gearlevel, 50, 1)){
+	   if (gearupgrade_dialog("weapon", "attackpower", weaponlevel, gearlevel, 50, 1)){
 		   attackpower += 50;
+		   weaponlevel++;
+		   gearlevel++;
 		   gearupgrade();
 		   return;
 	   }

@@ -146,7 +146,7 @@ class unit {
 
     void gearupgrade();
 
-	short gearupgrade_dialog(const string,const string,short*,short*,short,short);
+	short gearupgrade_dialog(const string,const string,short,short,short,short);
 
     void showmeters(unit&);
 
