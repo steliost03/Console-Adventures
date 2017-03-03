@@ -1,0 +1,38 @@
+﻿Build started 03-Mar-17 9:31:22 μμ.
+     1>Project "C:\Users\FLame\Desktop\github releases\Console Adventures\VS project\Console Adventures\Console Adventures.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\definitions.cpp ..\main.cpp
+         main.cpp
+         definitions.cpp
+     1>c:\users\flame\desktop\github releases\console adventures\vs project\definitions.cpp(417): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\flame\desktop\github releases\console adventures\vs project\definitions.cpp(1148): warning C4244: 'initializing' : conversion from 'long double' to 'long', possible loss of data
+     1>c:\users\flame\desktop\github releases\console adventures\vs project\definitions.cpp(1203): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\flame\desktop\github releases\console adventures\vs project\definitions.cpp(1227): warning C4244: 'initializing' : conversion from 'double' to 'clock_t', possible loss of data
+     1>c:\users\flame\desktop\github releases\console adventures\vs project\definitions.cpp(1313): warning C4244: '/=' : conversion from 'double' to 'long', possible loss of data
+     1>c:\users\flame\desktop\github releases\console adventures\vs project\definitions.cpp(1372): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\flame\desktop\github releases\console adventures\vs project\definitions.cpp(1925): warning C4244: '=' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>c:\users\flame\desktop\github releases\console adventures\vs project\definitions.cpp(2040): warning C4244: 'initializing' : conversion from 'double' to 'clock_t', possible loss of data
+     1>c:\users\flame\desktop\github releases\console adventures\vs project\definitions.cpp(2061): warning C4244: 'initializing' : conversion from 'double' to 'clock_t', possible loss of data
+     1>c:\users\flame\desktop\github releases\console adventures\vs project\definitions.cpp(2081): warning C4244: 'initializing' : conversion from 'double' to 'clock_t', possible loss of data
+     1>c:\users\flame\desktop\github releases\console adventures\vs project\definitions.cpp(2101): warning C4244: 'initializing' : conversion from 'double' to 'clock_t', possible loss of data
+     1>c:\users\flame\desktop\github releases\console adventures\vs project\definitions.cpp(2121): warning C4244: 'initializing' : conversion from 'double' to 'clock_t', possible loss of data
+     1>c:\users\flame\desktop\github releases\console adventures\vs project\definitions.cpp(2140): warning C4244: 'initializing' : conversion from 'double' to 'clock_t', possible loss of data
+     1>c:\users\flame\desktop\github releases\console adventures\vs project\definitions.cpp(2168): warning C4244: 'initializing' : conversion from 'double' to 'clock_t', possible loss of data
+     1>c:\users\flame\desktop\github releases\console adventures\vs project\definitions.cpp(2193): warning C4244: 'initializing' : conversion from 'double' to 'clock_t', possible loss of data
+     1>c:\users\flame\desktop\github releases\console adventures\vs project\definitions.cpp(2218): warning C4244: 'initializing' : conversion from 'double' to 'clock_t', possible loss of data
+     1>c:\users\flame\desktop\github releases\console adventures\vs project\definitions.cpp(2485): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\flame\desktop\github releases\console adventures\vs project\definitions.cpp(2504): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\flame\desktop\github releases\console adventures\vs project\definitions.cpp(2519): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\flame\desktop\github releases\console adventures\vs project\definitions.cpp(2630): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\flame\desktop\github releases\console adventures\vs project\definitions.cpp(2642): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
+     1>c:\users\flame\desktop\github releases\console adventures\vs project\definitions.cpp(2723): warning C4715: 'unit::save_load' : not all control paths return a value
+       Link:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\FLame\Desktop\github releases\Console Adventures\VS project\Console Adventures\Debug\Console Adventures.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\FLame\Desktop\github releases\Console Adventures\VS project\Console Adventures\Debug\Console Adventures.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\FLame\Desktop\github releases\Console Adventures\VS project\Console Adventures\Debug\Console Adventures.lib" /MACHINE:X86 Debug\definitions.obj
+         Debug\main.obj
+         Console Adventures.vcxproj -> C:\Users\FLame\Desktop\github releases\Console Adventures\VS project\Console Adventures\Debug\Console Adventures.exe
+     1>Done Building Project "C:\Users\FLame\Desktop\github releases\Console Adventures\VS project\Console Adventures\Console Adventures.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.54

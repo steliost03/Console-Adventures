@@ -1224,7 +1224,7 @@ bool unit::damagecalculate(unit& enemy,const string& skillname,const long extrad
 
 
     clock_t begin = clock();
-    clock_t delay = 2 * CLOCKS_PER_SEC;
+    clock_t delay = 1.5 * CLOCKS_PER_SEC;
 
     while ((clock() - begin) < delay);   //wait 2 seconds.
 
