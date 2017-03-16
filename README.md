@@ -1,7 +1,7 @@
 # Console-Adventures
 
 Console Adventures is a game where you control a noble hero in their quest to rid the realm of all evil monsters!                                                   
-##Features
+## Features
 
 * 3 classes with unique abilities and stats.
 
@@ -14,7 +14,7 @@ Console Adventures is a game where you control a noble hero in their quest to ri
 * Cutting-edge save/load technology with text files!
 
 
-##License
+## License
 
 'Console Adventures' is distributed under the GNU General Public License Version 3
 
