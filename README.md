@@ -1,6 +1,5 @@
 # Console-Adventures
-
-Console Adventures is a game where you control a noble hero in their quest to rid the realm of all evil monsters!                                                   
+                                                  
 ## Features
 
 * 3 classes with unique abilities and stats.
