@@ -17,4 +17,4 @@
 
 'Console Adventures' is distributed under the GNU General Public License Version 3
 
-Copyright (C) 2017 Stelios Tsiakalos
+Copyright (C) 2017 Stylianos Tsiakalos
